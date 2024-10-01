@@ -1,0 +1,189 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #1d1d1f;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0071e3;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f5f5f7;
+}
+
+.banner-img {
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Seção "Sobre" */
+#sobre {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #1d1d1f;
+}
+
+#sobre h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#sobre p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #6e6e73;
+}
+
+/* Seção destinos */
+#destinos {
+    padding: 80px 20px;
+    background-color: #f5f5f7;
+}
+
+#destinos h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1d1d1f;
+}
+
+.destinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.destino {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 40px); /* Ajusta para 3 colunas */
+    max-width: 300px;
+}
+
+.destino img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.destino p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #6e6e73;
+}
+
+/* Seção login */
+#login {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#login h2 {
+    font-size: 24px;
+    color: #1d1d1f;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #1d1d1f;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
+}
+
+.form-actions {
+    margin-top: 20px;
+}
+
+.form-actions button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #0071e3;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #f5f5f7;
+    color: #0071e3;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1d1d1f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #0071e3;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
